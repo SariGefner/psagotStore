@@ -4,4 +4,17 @@ $(document).ready(function () {
     });
   });
 
+   function showSection(section) {
+
+    var sections = document.querySelectorAll('.content-section');
+    sections.forEach(function(sec) {
+        sec.style.display = 'none';
+    });
+
+    document.getElementById(section).style.display = 'block';
+}
+
+window.onload = function() {
+    showSection('notebooks');
+}
   
