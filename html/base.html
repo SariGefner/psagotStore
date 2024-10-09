@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>basePage</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
+    <div class="wrapper d-flex">
+        <nav id="sidebar" class="bg-light" style="width: 200px;">
+            <div class="sidebar-header">
+                <h3>פסגות </h3>
+            </div>
 
-    <div class="wrapper">
-        <!-- Sidebar -->
-        <nav id="sidebar">
-          <div class="sidebar-header">
-            <h3>Sidebar Title</h3>
-          </div>
-      
-          <ul class="list-unstyled components">
-            <li class="active">
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-              <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li><a href="#">Home 1</a></li>
-                <li><a href="#">Home 2</a></li>
-                <li><a href="#">Home 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+            <ul class="list-unstyled components">
+                <li><a href="#" onclick="showSection('notebooks')">מחברות</a></li>
+                <li><a href="#" onclick="showSection('writing')">מכשירי כתיבה</a></li>
+            </ul>
         </nav>
-      
-        <!-- Page Content -->
-        <div id="content">
-          <!-- Toggle button -->
-          <button type="button" id="sidebarCollapse" class="btn btn-info">
-            <i class="fas fa-align-left"></i>
-            <span>Toggle Sidebar</span>
-          </button>
-          
-          <!-- Your main content goes here -->
-        </div>
-      </div>
 
-      <script src="../js/base.js"></script>
+        <div id="content" class="flex-grow-1">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+                <span>></span>
+            </button>
+         
+            <div id="notebooks" class="content-section">
+                <h2>מחברות</h2>
+                <p>כאן תמצאו מגוון מחברות.</p>
+            </div>
+            <div id="writing" class="content-section" style="display: none;">
+                <h2>מכשירי כתיבה</h2>
+                <p>כאן תמצאו מגוון מכשירי כתיבה.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/base.js"></script>
 </body>
+
 </html>
