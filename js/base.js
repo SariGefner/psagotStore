@@ -16,9 +16,9 @@ function showSection(section) {
     case "notbooks":
       loadNotebookList();
       break;
-      case "writing":
-        loadWritingList();
-        break;
+    case "writing":
+      loadWritingList();
+      break;
   }
 }
 
