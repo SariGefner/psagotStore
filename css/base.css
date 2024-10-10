@@ -60,3 +60,13 @@
   flex-wrap: wrap;
 
 }
+#conect_details{
+
+  display: flex;
+  justify-content: center;
+
+}
+
+#text-uppercase{
+  text-align: center;
+}
