@@ -2,117 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>basePage</title>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basePage</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 
 <body>
 
-    <div class="wrapper d-flex">
-        <nav id="sidebar" class="bg-light" style="width: 200px;">
-            <div class="sidebar-header">
-                <h3>פסגות </h3>
-            </div>
+  <div class="wrapper d-flex">
+    <nav id="sidebar" class="bg-light" style="width: 200px;">
+      <div class="sidebar-header">
+        <h3>פסגות </h3>
+      </div>
 
-            <ul class="list-unstyled components">
-                <li><a href="#" onclick="showSection('notebooks')">מחברות</a></li>
-                <li><a href="#" onclick="showSection('writing')">מכשירי כתיבה</a></li>
-            </ul>
-        </nav>
-
-
-        <div id="content" class="flex-grow-1">
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-                <i class="fas fa-align-left"></i>
-                <span>></span>
-            </button>
-         
-            <div id="notebooks" class="content-section">
-                <h2>מחברות</h2>
-                
-                <p>כאן תמצאו מגוון מחברות.</p>
-                <div id="notebook-list" class="product-list"></div>
+      <ul class="list-unstyled components">
+        <li><a href="#" onclick="showSection('notebooks')">מחברות</a></li>
+        <li><a href="#" onclick="showSection('writing')">מכשירי כתיבה</a></li>
+      </ul>
+    </nav>
 
 
-            </div>
-            <div id="writing" class="content-section" style="display: none;">
-                
-                <h2>מכשירי כתיבה</h2>
-                <p>כאן תמצאו מגוון מכשירי כתיבה.</p>
-                <div id="'writing-list" class="product-list"></div>
-            </div>
+    <div id="content" class="flex-grow-1">
+      <button type="button" id="sidebarCollapse" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span>></span>
+      </button>
 
- 
-        </div>
+      <div id="notebooks" class="content-section">
+        <h2>מחברות</h2>
+
+        <p>כאן תמצאו מגוון מחברות.</p>
+        <div id="notebook-list" class="product-list"></div>
+
+
+      </div>
+      <div id="writing" class="content-section" style="display: none;">
+
+        <h2>מכשירי כתיבה</h2>
+        <p>כאן תמצאו מגוון מכשירי כתיבה.</p>
+        <div id="'writing-list" class="product-list"></div>
       </div>
 
 
-      <footer class="bg-light text-center text-lg-start">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!-- Grid row -->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase">: עקבו אחרינו ותשארו מעודכנים</h5>
-              <div class="contact-icons">
-                <a href="https://wa.me/0527648008" target="_blank" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+    </div>
+  </div>
 
-                <a href="https://twitter.com/Noa" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-            </div>
-            <!-- Grid column -->
-      
-            <!-- Grid column -->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="text-dark">Link 1</a></li>
-                <li><a href="#!" class="text-dark">Link 2</a></li>
-                <li><a href="#!" class="text-dark">Link 3</a></li>
-                <li><a href="#!" class="text-dark">Link 4</a></li>
-              </ul>
-            </div>
-            <!-- Grid column -->
-      
-            <!-- Grid column -->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase mb-0">Links</h5>
-              <ul class="list-unstyled">
-                <li><a href="#!" class="text-dark">Link 1</a></li>
-                <li><a href="#!" class="text-dark">Link 2</a></li>
-                <li><a href="#!" class="text-dark">Link 3</a></li>
-                <li><a href="#!" class="text-dark">Link 4</a></li>
-              </ul>
-            </div>
-            <!-- Grid column -->
+
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">: עקבו אחרינו ותשארו מעודכנים</h5>
+          <div class="contact-icons">
+            <a href="https://wa.me/0527648008" target="_blank" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="https://twitter.com/Noa" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
           </div>
-          <!-- Grid row -->
         </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          <button>תנאים|</button>
-          <button>שירות לקוחות</button>
-         
-        </div>
-        <!-- Copyright -->
-      </footer>
+        <!-- Grid column -->
 
-      <script src="../js/base.js"></script>
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#!" class="text-dark">Link 1</a></li>
+            <li><a href="#!" class="text-dark">Link 2</a></li>
+            <li><a href="#!" class="text-dark">Link 3</a></li>
+            <li><a href="#!" class="text-dark">Link 4</a></li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!" class="text-dark">Link 1</a></li>
+            <li><a href="#!" class="text-dark">Link 2</a></li>
+            <li><a href="#!" class="text-dark">Link 3</a></li>
+            <li><a href="#!" class="text-dark">Link 4</a></li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <button>תנאים|</button>
+      <button>שירות לקוחות</button>
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="../js/base.js"></script>
 </body>
 
 </html>
