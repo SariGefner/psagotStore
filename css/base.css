@@ -59,6 +59,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 
+
 }
 #conect_details{
 
@@ -70,3 +71,6 @@
 #text-uppercase{
   text-align: center;
 }
+
+}
+
