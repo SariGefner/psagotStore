@@ -19,11 +19,19 @@ function showSection(section) {
     case "writing":
       loadWritingList();
       break;
+    case "cart":
+      loadCartList()  
+
   }
 }
 
 window.onload = function () {
   showSection('notebooks');
+}
+
+function createCartCard( product ){
+
+
 }
 
 function createProductCard(product) {
@@ -47,6 +55,7 @@ function createProductCard(product) {
   button.textContent = 'הוסף לסל';
   button.className = 'add-to-cart';
   button.onclick = function () {
+    PersonalCart.push(product)
     alert(`${product.name} נוסף לסל`);
   };
   card.appendChild(button);
@@ -58,7 +67,10 @@ const notbooks = [{ name: "notebook", imageUrl: "../assets/notbook.png", price: 
   , { name: "notebook", imageUrl: "../assets/notbook.png", price: "50" }
   , { name: "notebook", imageUrl: "../assets/notbook.png", price: "50" }
   , { name: "notebook", imageUrl: "../assets/notbook.png", price: "50" }
+
 ]
+
+const PersonalCart = [];
 
 
 function loadNotebookList() {
@@ -78,5 +90,21 @@ function loadWritingList() {
   })
 
 }
+
+function loadCartList(){
+  const cartList = document.getElementsById('cart-list')
+  const cartSummarize = []
+  PersonalCart.map( obj => {
+
+    const result = cartSummarize.find( element => element.id === 2);
+
+    const cartCard = createCartCard( obj );
+    cartList.appendChild(cartCard)
+
+  } )
+}
+
+
+
 
 window.onload = loadNotebookList;

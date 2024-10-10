@@ -5,12 +5,13 @@
 }
 
 
+
 #sidebar {
   min-width: 250px;
   max-width: 250px;
   min-height: 100vh;
-  background: #78ABA8;
-  color: #fff;
+  background: #4cc8c0;
+  color: #3f3535;
   transition: all 0.3s;
 }
 

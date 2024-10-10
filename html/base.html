@@ -24,9 +24,10 @@
                 <h3>פסגות </h3>
             </div>
 
-            <ul class="list-unstyled components">
+            <ul class="list-unstyled">
                 <li><a href="#" onclick="showSection('notebooks')">מחברות</a></li>
                 <li><a href="#" onclick="showSection('writing')">מכשירי כתיבה</a></li>
+                <li><a href="#" onclick="showSection('cart')">עגלת קניות 🛒 </a></li>
             </ul>
         </nav>
 
@@ -47,9 +48,33 @@
             </div>
             <div id="writing" class="content-section" style="display: none;">
                 
-                <h2>מכשירי כתיבה</h2>
+                <h2 id="title">מכשירי כתיבה</h2>
                 <p>כאן תמצאו מגוון מכשירי כתיבה.</p>
                 <div id="'writing-list" class="product-list"></div>
+            </div>
+
+            <div id="condtions" class="content-section" style="display: none;">
+                <h2 id="title"> תנאי החזרות והחלפות </h2>
+                <p> ניתן להחזיר את מוצרינו ולקבל החזר מלא עד 24 שעות מקבלת המוצר </p>
+                <p> ניתן להחליף מוצר באחר או לקבל זיכוי כספי בעבורו עד שבועיים מקבלת המוצר </p>
+
+            </div>
+
+            <div id="cart" class="content-section" style="display: none;">
+
+                <h1>עגלת הקניות </h1>
+                <div id="cart-list"></div>
+
+
+            </div>
+
+            <div id="customerService" class="content-section" style="display: none;">
+                <h2 id="title"> שירות לקוחות </h2>
+                <p> כתובת: שייקה אופיר 12 ראש-העין</p>
+                <p> טלפון: 054-5779917</p>
+                <p> דוא"ל: office@psagot.shop </p>
+
+
             </div>
 
  
@@ -73,8 +98,8 @@
         </div>
 
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          <button>תנאים</button>
-          <button>שירות לקוחות</button>
+          <button onclick="showSection('condtions')">תנאים</button>
+          <button onclick="showSection('customerService')">שירות לקוחות</button>
          
         </div>
         
