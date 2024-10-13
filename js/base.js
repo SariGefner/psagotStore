@@ -110,5 +110,3 @@ async function loadWritingList() {
   }
 
 }
-
-
